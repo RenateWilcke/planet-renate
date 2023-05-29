@@ -29,6 +29,17 @@ def init_Earth(AU,year,L):
   return x,y,u,v,mj
 
 def init_Jupiter(AU,year,L):
+  """
+  Initialize constant values for Jupiter
+
+  Arguments:
+     AU
+     year
+     L
+
+  Returns:
+     xJ,yJ,uJ,vJ,mJ
+  """
   dJ=5.203*AU
   mJ=1.899e27
   v0J=dJ*2*np.pi/(11.86*year);
